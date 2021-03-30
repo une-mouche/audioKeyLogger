@@ -51,6 +51,7 @@ def get_pics_from_file(filename):
         tab_pics.append(pics)
         pics = read_double_tab(f_pic, info["nb_pics"])
     print("Nb trames: " + str(nb_trames))
+    info["nb_trames"] = nb_trames
     f_pic.close()
     return tab_pics, info
 
